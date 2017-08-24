@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "kentcdodds/best-practices",
+    "kentcdodds/possible-errors",
+    "kentcdodds/es6/possible-errors"
+  ],
+  "rules": {},
+}
