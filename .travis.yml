@@ -1,14 +1,15 @@
 sudo: false
-language:
+language: node_js
 cache:
   directories:
     - node_modules
-node_js: 6
 branches:
   only:
     - master
 notifications:
   email: false
+before_script:
+  - npm prune
 script:
   - npm run validate
 after_success:
