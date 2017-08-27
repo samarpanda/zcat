@@ -1,6 +1,6 @@
 {
   "name": "zcat",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "z categories",
   "main": "dist/index.js",
   "scripts": {
@@ -19,9 +19,10 @@
     "test:alternative2": "cross-env NODE_ENV=test nyc mocha",
     "release": "semantic-release pre && npm publish && semantic-release post",
     "lint": "eslint src",
-    "validate": "npm-run-all --parallel lint cover build"
+    "validate": "npm-run-all --parallel lint cover build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-istanbul": "^4.1.4",
