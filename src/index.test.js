@@ -6,6 +6,9 @@ describe('z categories', function(){
   it('all categores', function(){
     expect(isArrayOfObjects(z.all)).to.be.true
   })
+  it('top categories', function(){
+    expect(isArrayOfObjects(z.top())).to.be.true
+  })
 })
 
 function isArrayOfObjects(arr){
